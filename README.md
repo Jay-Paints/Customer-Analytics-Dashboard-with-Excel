@@ -5,9 +5,12 @@ In today’s data-heavy business environment, the ability to pivot from raw tran
 
 By synthesizing complex datasets involving thousands of products and nearly 9,000 customers, the solution provides an end-to-end view of organizational health. The dashboard serves as a "single source of truth," allowing stakeholders to monitor Gross Profit ($17,341,934), track order volumes, and evaluate the success of regional operations in the USA, Mexico, and Canada. Through the application of Power Query, Power Pivot, and DAX, the project demonstrates how advanced spreadsheet engineering can deliver the same depth of insight as premium Business Intelligence (BI) platforms at a fraction of the cost. 
 
-
-<img width="1794" height="937" alt="Interactive Customer Dashboard" src="https://github.com/user-attachments/assets/d6b17ebd-2378-4e14-9b4b-a71cdacf7936" />
-*Interactive Customer Dashboard*
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/d6b17ebd-2378-4e14-9b4b-a71cdacf7936" width="800">
+</p>
+<p align="center">
+  <em>Interactive Customer Dashboard</em><br>
+</p>
 
 
 ## Business Problem
@@ -38,9 +41,12 @@ The project began with the extraction of structured data from the corporate data
 * **Data Quality Fixes:** The process involved removing empty rows (top 5 rows of the Store_Lookup), promoting headers, and resolving date-type errors by adjusting the locale settings to English (United States) to match the PC's system time.
 * **Redundancy Removal:** Irrelevant fields such as occupation and education were stripped to optimize the data model's size and performance.
 
-
-<img width="1920" height="1007" alt="Power Query Editor showing the cleaned data pipeline and appended tables" src="https://github.com/user-attachments/assets/0f424c70-d509-4bec-a375-8096c4254233" />
-*Power Query Editor showing the cleaned data pipeline and appended tables*
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0f424c70-d509-4bec-a375-8096c4254233" width="800">
+</p>
+<p align="center">
+  <em>Power Query Editor showing the cleaned data pipeline and appended tables</em><br>
+</p>
 
 
 ### Data Modelling with Power Pivot
@@ -49,9 +55,13 @@ To support fast, cross-functional analysis, a **Star Schema** was implemented wi
 * **Bridge Tables:** Because some tables lacked direct join keys, bridge tables were utilized to maintain integrity. For instance, the `Product_Brand_Lookup` was linked to the Fact Table via the `Product_Lookup` using `brand_id` and `product_id`. Similarly, the `Region_Lookup` connected through the `Store_Lookup`.
 * **Time Intelligence:** A custom `Calendar_Lookup` table was created and linked to all transaction dates. This is a foundational step for drill-down analysis, allowing stakeholders to view performance by day, weekday, or month.
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0f5c97b6-4377-4fc6-bebf-23b02c958fdc" width="800">
+</p>
+<p align="center">
+  <em>Data Model Relationship Diagram showing the Star Schema</em><br>
+</p>
 
-<img width="1920" height="1005" alt="Data Model Relationship Diagram showing the Star Schema" src="https://github.com/user-attachments/assets/0f5c97b6-4377-4fc6-bebf-23b02c958fdc" />
-*Data Model Relationship Diagram showing the Star Schema*
 
 ### Data Analysis Expressions (DAX)
 DAX was used to define business logic calculations of the dashboard. Moving beyond basic pivot tables, custom measures were created to provide deeper insights:
@@ -77,8 +87,12 @@ Every visualization was chosen to serve a specific analytical purpose:
 * **Map Visualization (Total Profit by Country):** Utilizing Excel's map chart features, this tile provides a geographic overview of the North American market. It uses arrows and callouts to highlight that the **USA drives 61% of total profits**, making the regional dominance immediately apparent to executives.
 * **Column Charts (Top/Bottom 5 Cities):** These charts dynamically update based on the country slicer. If a user selects "Mexico," the charts display the most and least profitable cities in that specific region (e.g., **Hidalgo and Merida** as top performers).
 
-<img width="1437" height="538" alt="Dynamic Top 5 Customer toggle and Map Visualization" src="https://github.com/user-attachments/assets/1c536d9a-c970-4907-8b07-61d5e7e71672" />
-*Dynamic Top 5 Customer toggle and Map Visualization*
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/1c536d9a-c970-4907-8b07-61d5e7e71672" width="800">
+</p>
+<p align="center">
+  <em>Dynamic Top 5 Customer toggle and Map Visualization</em><br>
+</p>
 
 
 ## Key Metrics (KPIs)
