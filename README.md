@@ -7,6 +7,7 @@ By synthesizing complex datasets involving thousands of products and nearly 9,00
 
 
 <img width="1794" height="937" alt="Interactive Customer Dashboard" src="https://github.com/user-attachments/assets/d6b17ebd-2378-4e14-9b4b-a71cdacf7936" />
+*Interactive Customer Dashboard*
 
 
 ## Business Problem
@@ -39,6 +40,7 @@ The project began with the extraction of structured data from the corporate data
 
 
 <img width="1920" height="1007" alt="Power Query Editor showing the cleaned data pipeline and appended tables" src="https://github.com/user-attachments/assets/0f424c70-d509-4bec-a375-8096c4254233" />
+*Power Query Editor showing the cleaned data pipeline and appended tables*
 
 
 ### Data Modelling with Power Pivot
@@ -49,7 +51,7 @@ To support fast, cross-functional analysis, a **Star Schema** was implemented wi
 
 
 <img width="1920" height="1005" alt="Data Model Relationship Diagram showing the Star Schema" src="https://github.com/user-attachments/assets/0f5c97b6-4377-4fc6-bebf-23b02c958fdc" />
-
+*Data Model Relationship Diagram showing the Star Schema*
 
 ### Data Analysis Expressions (DAX)
 DAX was used to define business logic calculations of the dashboard. Moving beyond basic pivot tables, custom measures were created to provide deeper insights:
@@ -76,6 +78,7 @@ Every visualization was chosen to serve a specific analytical purpose:
 * **Column Charts (Top/Bottom 5 Cities):** These charts dynamically update based on the country slicer. If a user selects "Mexico," the charts display the most and least profitable cities in that specific region (e.g., **Hidalgo and Merida** as top performers).
 
 <img width="1437" height="538" alt="Dynamic Top 5 Customer toggle and Map Visualization" src="https://github.com/user-attachments/assets/1c536d9a-c970-4907-8b07-61d5e7e71672" />
+*Dynamic Top 5 Customer toggle and Map Visualization*
 
 
 ## Key Metrics (KPIs)
