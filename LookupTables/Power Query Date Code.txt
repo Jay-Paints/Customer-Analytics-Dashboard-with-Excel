@@ -1,0 +1,6 @@
+
+=#date(2020,1,1)
+
+
+=List.Dates(Source, Number.From(DateTime.LocalNow()) - Number.From(Source), #duration(1,0,0,0))
+
