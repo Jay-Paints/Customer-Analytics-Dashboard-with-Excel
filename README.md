@@ -3,7 +3,8 @@
 ## Executive Summary
 In today’s data-heavy business environment, the ability to pivot from raw transactional records to high-level strategic decisions is a critical competitive advantage. This project features a comprehensive interactive Excel dashboard designed to analyze $29,063,066 in total revenue generated from 452,603 transactions across North American markets.
 
-By synthesizing complex datasets involving thousands of products and nearly 9,000 customers, the solution provides an end-to-end view of organizational health. The dashboard serves as a "single source of truth," allowing stakeholders to monitor Gross Profit ($17,341,934), track order volumes, and evaluate the success of regional operations in the USA, Mexico, and Canada. Through the application of Power Query, Power Pivot, and DAX, the project demonstrates how advanced spreadsheet engineering can deliver the same depth of insight as premium Business Intelligence (BI) platforms at a fraction of the cost.
+By synthesizing complex datasets involving thousands of products and nearly 9,000 customers, the solution provides an end-to-end view of organizational health. The dashboard serves as a "single source of truth," allowing stakeholders to monitor Gross Profit ($17,341,934), track order volumes, and evaluate the success of regional operations in the USA, Mexico, and Canada. Through the application of Power Query, Power Pivot, and DAX, the project demonstrates how advanced spreadsheet engineering can deliver the same depth of insight as premium Business Intelligence (BI) platforms at a fraction of the cost. 
+
 
 <img width="1794" height="937" alt="Interactive Customer Dashboard" src="https://github.com/user-attachments/assets/d6b17ebd-2378-4e14-9b4b-a71cdacf7936" />
 
@@ -22,7 +23,7 @@ The primary challenge addressed by this project was the lack of centralized, dyn
 The project utilizes a data pipeline that ensures data integrity, scalability, and performance.
 
 * **Microsoft Excel:** The core environment for analysis and visualization.
-8 **Power Query (ETL):** Employed for extracting, transforming, and loading data while automating the cleaning process.
+* **Power Query (ETL):** Employed for extracting, transforming, and loading data while automating the cleaning process.
 * **Power Pivot (Data Modeling):** Used to build a sophisticated Star Schema and manage massive datasets beyond standard Excel cell limits.
 * **DAX (Data Analysis Expressions):** Leveraged to create calculated columns and measures for complex business logic.
 
@@ -36,6 +37,7 @@ The project began with the extraction of structured data from the corporate data
 * **Data Quality Fixes:** The process involved removing empty rows (top 5 rows of the Store_Lookup), promoting headers, and resolving date-type errors by adjusting the locale settings to English (United States) to match the PC's system time.
 * **Redundancy Removal:** Irrelevant fields such as occupation and education were stripped to optimize the data model's size and performance.
 
+
 <img width="1920" height="1007" alt="Power Query Editor showing the cleaned data pipeline and appended tables" src="https://github.com/user-attachments/assets/0f424c70-d509-4bec-a375-8096c4254233" />
 
 
@@ -44,6 +46,7 @@ To support fast, cross-functional analysis, a **Star Schema** was implemented wi
 
 * **Bridge Tables:** Because some tables lacked direct join keys, bridge tables were utilized to maintain integrity. For instance, the `Product_Brand_Lookup` was linked to the Fact Table via the `Product_Lookup` using `brand_id` and `product_id`. Similarly, the `Region_Lookup` connected through the `Store_Lookup`.
 * **Time Intelligence:** A custom `Calendar_Lookup` table was created and linked to all transaction dates. This is a foundational step for drill-down analysis, allowing stakeholders to view performance by day, weekday, or month.
+
 
 <img width="1920" height="1005" alt="Data Model Relationship Diagram showing the Star Schema" src="https://github.com/user-attachments/assets/0f5c97b6-4377-4fc6-bebf-23b02c958fdc" />
 
