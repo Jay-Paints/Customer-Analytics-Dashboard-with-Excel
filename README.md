@@ -24,7 +24,7 @@ The primary challenge addressed by this project was the lack of centralized, dyn
 * **Growth Trends:** What are the Month-over-Month (MoM) % Revenue changes?
 
 ## Methodology and Tools
-The project utilizes a data pipeline that ensures data integrity, scalability, and performance.
+The project follows a rigorous end-to-end data pipeline, moving from raw extraction of data to advanced modeling and visualization. Below are the tools used:
 
 * **Microsoft Excel:** The core environment for analysis and visualization.
 * **Power Query (ETL):** Employed for extracting, transforming, and loading data while automating the cleaning process.
