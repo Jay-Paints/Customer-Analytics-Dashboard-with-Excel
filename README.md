@@ -109,7 +109,7 @@ The dashboard tracks the following performance indicators:
 ## Insights and Recommendations
 The analysis uncovered several critical opportunities for the business:
 
-* **Regional Strategy:** With the USA contributing $10,543,932 (61%). However, Mexico ($5,563,517) represents a significant secondary market (32%).
+* **Regional Strategy:** The USA contributes $10,543,932 (61%) of profit, while Mexico ($5,563,517) represents a significant secondary market (32%).
   * Recommendation: Prioritize supply chain and marketing investments in the USA, particularly in high-performing cities, while investigating the "Bottom 5" cities like Mill Valley and San Francisco to determine if operational costs or low demand are eroding margins.
 * **Demographic Focus:** Single customers account for 69% of profit, and those in the 0-30 age group contribute 51% ($8.8M).
   * Recommendation: Marketing campaigns should shift focus toward younger, single demographics. Digital engagement strategies tailored to these segments are likely to yield the highest ROI.
